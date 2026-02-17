@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-os-sdk"
+version = "0.1.0"
+description = "Python SDK for provisioning and managing Agent VMs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = "MIT"
+authors = [{ name = "Agent SDK Maintainers" }]
+dependencies = [
+  "httpx>=0.27.0",
+]
+keywords = ["agent", "sdk", "vm", "mcp"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+[tool.setuptools]
+packages = ["agent_os_sdk"]
+
+[tool.setuptools.package-dir]
+agent_os_sdk = "."

@@ -1,0 +1,40 @@
+# OS/editor noise
+.DS_Store
+.idea/
+.vscode/
+
+# Python bytecode/cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Test and coverage artifacts
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.hypothesis/
+.tox/
+.nox/
+
+# Type/lint caches
+.mypy_cache/
+.ruff_cache/
+.pyre/
+
+# Packaging/build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Local env files
+.env
+.env.*
+!.env.example
