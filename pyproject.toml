@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-vm-sdk"
+version = "0.1.0"
+description = "Python SDK for provisioning and managing Agent VMs"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{ name = "Agent VM SDK Maintainers" }]
+dependencies = [
+  "httpx>=0.27.0",
+]
+keywords = ["agent", "sdk", "vm", "mcp", "container"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+]
+
+[project.urls]
+Homepage = "https://github.com/sean-lai-sh/agent-vm-sdk"
+Repository = "https://github.com/sean-lai-sh/agent-vm-sdk"
+Documentation = "https://github.com/sean-lai-sh/agent-vm-sdk#readme"
+
+[tool.setuptools]
+packages = ["agent_vm_sdk"]
