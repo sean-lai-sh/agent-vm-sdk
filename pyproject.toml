@@ -3,7 +3,7 @@ requires = ["setuptools>=69", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "agent-os-sdk"
+name = "agent-vm-sdk"
 version = "0.1.0"
 description = "Python SDK for provisioning and managing Agent VMs."
 readme = "README.md"
@@ -24,7 +24,7 @@ classifiers = [
 ]
 
 [tool.setuptools]
-packages = ["agent_os_sdk"]
+packages = ["agent_vm_sdk"]
 
 [tool.setuptools.package-dir]
-agent_os_sdk = "."
+agent_vm_sdk = "."

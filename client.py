@@ -8,7 +8,7 @@ import httpx
 
 @dataclass
 class VMConfig:
-    image: str = "agent-os-base"
+    image: str = "agent-vm-base"
     preset_slug: str = "micro"
 
 
