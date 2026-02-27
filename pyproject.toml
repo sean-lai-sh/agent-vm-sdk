@@ -27,8 +27,7 @@ classifiers = [
 openai-agents = ["openai-agents>=0.0.3"]
 
 [tool.setuptools.packages.find]
-where = ["."]
-include = ["agent_vm_sdk*"]
+where = ["src"]
 
 [tool.setuptools.package-data]
 agent_vm_sdk = ["py.typed"]
