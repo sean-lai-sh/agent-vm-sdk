@@ -23,8 +23,12 @@ classifiers = [
   "Programming Language :: Python :: 3.12",
 ]
 
-[tool.setuptools]
-packages = ["agent_vm_sdk"]
+[project.optional-dependencies]
+openai-agents = ["openai-agents>=0.0.3"]
 
-[tool.setuptools.package-dir]
-agent_vm_sdk = "."
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["agent_vm_sdk*"]
+
+[tool.setuptools.package-data]
+agent_vm_sdk = ["py.typed"]
