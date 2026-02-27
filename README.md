@@ -16,6 +16,8 @@ pip install "agent-vm-sdk[openai-agents]"
 
 ## Quick Start
 
+`service_url` points to your hosted `agent_service` deployment — the backend that spins up isolated VM instances and returns an MCP endpoint your agent connects to.
+
 ### OpenAI Agents SDK
 
 Provision a VM and plug it directly into an OpenAI Agents SDK agent:
@@ -116,7 +118,7 @@ asyncio.run(main())
 
 | Parameter | Env var | Default | Description |
 |---|---|---|---|
-| `service_url` | — | `http://localhost:8000` | URL of the agent provisioning service |
+| `service_url` | — | `http://localhost:8000` | URL of your managed `agent_service` deployment — the backend that provisions and manages VM instances on your behalf |
 | `access_token` | `AGENT_SERVICE_ACCESS_TOKEN` | `None` | Bearer token for the service |
 
 ## Build
